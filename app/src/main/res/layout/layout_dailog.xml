@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center|top">
+
+    <EditText
+        android:id="@+id/player1Entry"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Player1"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/player2Entry"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player1Entry"
+        android:hint="Player2"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/player3Entry"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player2Entry"
+        android:hint="Player3"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/player4Entry"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player3Entry"
+        android:hint="Player4"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/player5Entry"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player4Entry"
+        android:hint="Player5"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+</RelativeLayout>

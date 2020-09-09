@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Point Calculator</string>
+    <string name="player">Enter number of players:</string>
+    <string name="sta">Start Game</string>
+</resources>

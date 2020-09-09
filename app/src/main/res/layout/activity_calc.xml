@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".CalcActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        app:srcCompat="@drawable/dc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LinearName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="PLAYER NAMES:"
+                android:textAlignment="center"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/player1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                tools:text="Nabin" />
+
+            <TextView
+                android:id="@+id/player2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player3Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player4Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player5Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headingScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="SCORE"
+                android:textAlignment="center"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/player1Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                tools:text="Nabin" />
+
+            <TextView
+                android:id="@+id/player2Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player3Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player4Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player5Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearScoreEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headingScoreEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text=" ENTER "
+                android:textAlignment="center"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/player1ScoreEntry"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/player2ScoreEntry"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="11dp"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/player3ScoreEntry"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="11dp"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/player4ScoreEntry"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="11dp"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/player5ScoreEntry"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="11dp"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSeen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headingSeen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="UNSEEN"
+                android:textAlignment="center"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold" />
+
+
+            <Switch
+                android:id="@+id/player1Seen"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player2Seen"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player3Seen"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player4Seen"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player5Seen"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearWin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headingWinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="WINNER"
+                android:textAlignment="center"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold" />
+
+
+            <Switch
+                android:id="@+id/player1Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player2Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player3Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player4Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+            <Switch
+                android:id="@+id/player5Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/sw_thumb"
+                android:track="@drawable/sw_track" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonCal"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bar_design"
+        android:text="CALCULATE" />
+
+</LinearLayout>
